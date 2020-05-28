@@ -10,8 +10,8 @@
         {
             "atomType": "RegularPolygon",
             "name": "RegularPolygon",
-            "x": 0.05856515373352855,
-            "y": 0.2681992337164751,
+            "x": 0.06442166910688141,
+            "y": 0.32567049808429116,
             "uniqueID": 452464,
             "ioValues": [
                 {
@@ -33,7 +33,7 @@
             "ioValues": [
                 {
                     "name": "height",
-                    "ioValue": 10
+                    "ioValue": 6
                 }
             ]
         },
@@ -41,22 +41,9 @@
             "atomType": "Difference",
             "name": "Difference",
             "x": 0.1896046852122987,
-            "y": 0.475095785440613,
+            "y": 0.4597701149425288,
             "uniqueID": 806239,
             "ioValues": []
-        },
-        {
-            "atomType": "Circle",
-            "name": "Circle",
-            "x": 0.0534407027818448,
-            "y": 0.5517241379310345,
-            "uniqueID": 506924,
-            "ioValues": [
-                {
-                    "name": "diameter",
-                    "ioValue": 6
-                }
-            ]
         },
         {
             "atomType": "Color",
@@ -68,6 +55,19 @@
             "selectedColorIndex": "11"
         },
         {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.07174231332357248,
+            "y": 0.685823754789272,
+            "uniqueID": 506924,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 6
+                }
+            ]
+        },
+        {
             "atomType": "Add BOM Tag",
             "name": "Add BOM Tag",
             "x": 0.5944363103953147,
@@ -75,10 +75,10 @@
             "uniqueID": 260163,
             "ioValues": [],
             "BOMitem": {
-                "BOMitemName": "name",
+                "BOMitemName": "M6 Locknut",
                 "numberNeeded": 1,
-                "costUSD": 0,
-                "source": "www.example.com",
+                "costUSD": 0.049100000000000005,
+                "source": "https://www.mcmaster.com/90576A115",
                 "totalNeeded": 1
             }
         },
@@ -114,17 +114,17 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "geometry2",
-            "ap2Primary": false,
-            "ap1ID": 506924,
-            "ap2ID": 806239
-        },
-        {
-            "ap1Name": "geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
             "ap1ID": 952614,
             "ap2ID": 260163
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry2",
+            "ap2Primary": false,
+            "ap1ID": 506924,
+            "ap2ID": 806239
         },
         {
             "ap1Name": "geometry",
