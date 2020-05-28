@@ -8,6 +8,81 @@
     "topLevel": true,
     "allAtoms": [
         {
+            "atomType": "RegularPolygon",
+            "name": "RegularPolygon",
+            "x": 0.05856515373352855,
+            "y": 0.2681992337164751,
+            "uniqueID": 452464,
+            "ioValues": [
+                {
+                    "name": "number of sides",
+                    "ioValue": 6
+                },
+                {
+                    "name": "diameter",
+                    "ioValue": 10
+                }
+            ]
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.32503660322108346,
+            "y": 0.32950191570881227,
+            "uniqueID": 827244,
+            "ioValues": [
+                {
+                    "name": "height",
+                    "ioValue": 10
+                }
+            ]
+        },
+        {
+            "atomType": "Difference",
+            "name": "Difference",
+            "x": 0.1896046852122987,
+            "y": 0.475095785440613,
+            "uniqueID": 806239,
+            "ioValues": []
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.0534407027818448,
+            "y": 0.5517241379310345,
+            "uniqueID": 506924,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 6
+                }
+            ]
+        },
+        {
+            "atomType": "Color",
+            "name": "Color",
+            "x": 0.45680819912152265,
+            "y": 0.5019157088122606,
+            "uniqueID": 952614,
+            "ioValues": [],
+            "selectedColorIndex": "11"
+        },
+        {
+            "atomType": "Add BOM Tag",
+            "name": "Add BOM Tag",
+            "x": 0.5944363103953147,
+            "y": 0.49808429118773945,
+            "uniqueID": 260163,
+            "ioValues": [],
+            "BOMitem": {
+                "BOMitemName": "name",
+                "numberNeeded": 1,
+                "costUSD": 0,
+                "source": "www.example.com",
+                "totalNeeded": 1
+            }
+        },
+        {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9853587115666179,
@@ -15,6 +90,50 @@
             "ioValues": []
         }
     ],
-    "allConnectors": [],
-    "fileTypeVersion": 1
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry1",
+            "ap2Primary": false,
+            "ap1ID": 452464,
+            "ap2ID": 806239
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 827244,
+            "ap2ID": 952614
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 806239,
+            "ap2ID": 827244
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry2",
+            "ap2Primary": false,
+            "ap1ID": 506924,
+            "ap2ID": 806239
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 952614,
+            "ap2ID": 260163
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 260163
+        }
+    ],
+    "fileTypeVersion": 1,
+    "filetypeVersion": 1,
+    "circleSegmentSize": "0.1"
 }
